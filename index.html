@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>jwt token authenticate</p>
+    <input type = "button" onclick = "authenticate()" value = "click authenticate">
+    <input id="btn-logout" type = "button" onclick = "logout()" value = "click logout" style="display: none;"><br>  
+    <label>access token &nbsp;: </label><textarea id="accessToken" value="" ></textarea><br>
+    <label>refresh token : </label><textarea id="refreshToken" value="" ></textarea><br>
+    <input id="btn-get-user" type = "button" onclick = "getUser()" value = "click get users" style="display: none;"><br>  
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="vanilla.js"></script>
+  </body>
+</html>
